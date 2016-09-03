@@ -9,13 +9,13 @@
 
 	<div id="post" class="post">
 		<div class="post__info">
-			<a href="#" class="post__image">
-				<img src="http://placekitten.com/g/50/50">
+			<a href="#">
+				<img src="http://placekitten.com/g/50/50"  class="post__image">
 			</a>
 			<p>
 				<a href="#" class="bold">Jon Loomer Digital</a>
 				<span class="gray">&centerdot; 11,866 like this</span><br>
-				<span class="small gray">about an hour ago &centerdot;</span> 
+				<span class="gray">about an hour ago &centerdot;</span> 
 				<span class="post__icon">&#x1F30D;</span>
 			</p>
 		</div>
@@ -29,33 +29,34 @@
 		</div>
 
 		<p class="post__likes bluebg">&#x1F44D; <a href="#">Blake Jamieson</a> likes this.</p>
-
-		<div class="post__info bluebg">
-			<a href="#">
-				<img class="post__image" src="http://placekitten.com/g/34/34">
-			</a>
-			<p class="no-margin">
-				<a href="#" class="bold">Blake Jamieson</a>
-				<span>#iseeit</span><br>
-				<a href="#">Like</a> &centerdot;
-				<a href="#">Reply</a> &centerdot;
-				<span>&#x1F44D;5</span> &centerdot;
-				<span>4 minutes ago</span>
-			</p>
-		</div>
-		<div class="post__info bluebg">
-			<a href="#">
-				<img class="post__image" src="http://placekitten.com/g/34/34">
-			</a>
-			<p class="no-margin">
-				<a href="#" class="bold">Emeric Ernoult</a>
-				<span>I do!</span><br>
-				<a href="#">Like</a> &centerdot;
-				<a href="#">Reply</a> &centerdot;
-				<span>&#x1F44D;2</span> &centerdot;
-				<span>a few seconds ago via mobile</span>
-			</p>
-		</div>
+		<ul class="post__comments">
+			<li class="post__comment bluebg" id="comment1">
+				<a href="#">
+					<img class="post__image" src="http://placekitten.com/g/34/34">
+				</a>
+				<p class="no-margin">
+					<a href="#" class="bold">Blake Jamieson</a>
+					<span>#iseeit</span><br>
+					<a href="#" class="comment-like">Like</a> &centerdot;
+					<a href="#">Reply</a> &centerdot;
+					&#x1F44D;<span class="comment-count">5</span> &centerdot;
+					<span class="gray">4 minutes ago</span>
+				</p>
+			</li>
+			<li class="post__comment bluebg" id="comment2">
+				<a href="#">
+					<img class="post__image" src="http://placekitten.com/g/34/34">
+				</a>
+				<p class="no-margin">
+					<a href="#" class="bold">Emeric Ernoult</a>
+					<span>I do!</span><br>
+					<a href="#" class="comment-like">Like</a> &centerdot;
+					<a href="#">Reply</a> &centerdot;
+					&#x1F44D;<span class="comment-count">2</span> &centerdot;
+					<span class="gray">a few seconds ago via mobile</span>
+				</p>
+			</li>
+		</ul>
 
 		<div class="comment bluebg">
 			<a href="#">
@@ -65,8 +66,8 @@
 		</div>
 
 		<p class="post__bottom">
-			<span>4 people saw this post</span>
-			<a href="#">Boost Post</a>
+			<a href="#">4 people saw this post</a>
+			<a href="#">Boost Post &blacktriangledown;</a>
 		</p>
 			
 	</div>

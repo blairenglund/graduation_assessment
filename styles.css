@@ -8,6 +8,9 @@ hr{
 	border: .5px solid rgb(230, 230, 230);
 }
 
+
+
+
 /* TYPOPGRAPHIC CLASSES ****************************************************************************/
 
 a{
@@ -23,13 +26,10 @@ a{
 	font-weight: bolder;
 }
 
-.small{
-	font-size: 8pt;
-}
+
 
 
 /* POST CLASSES **********************************************************************************/
-
 
 .post{
 	width: 572px;
@@ -38,8 +38,8 @@ a{
 	box-sizing: border-box;
 	border: 1px solid rgb(202, 210, 226);
 	border-radius: 4px;
-	font-family: Arial, sans-serif;
-	font-size: 9pt;
+	font-family: Lucida Grande, Arial, sans-serif;
+	font-size: 8pt;
 	margin: auto;
 }
 
@@ -48,6 +48,7 @@ a{
 	flex-flow: row;
 	align-items: center;
 	margin: 0;
+	font-size: 9pt;
 }
 
 .post__image{
@@ -59,7 +60,8 @@ a{
 }
 
 .post__content{
-	font-size: 11pt;
+	font-size: 9pt;
+	padding-bottom: 4px;
 }
 
 .post__interact{
@@ -67,7 +69,21 @@ a{
 }
 
 .post__likes{
-	font-size: 9pt;	
+	font-size: 8pt;	
+}
+
+.post__comments{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.post__comment{
+	height: 34px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin: 0;
 }
 
 .comment{
@@ -78,48 +94,29 @@ a{
 }
 
 .comment__text{
-	width: 100%
+	width: 100%;
+	border: 1px solid rgb(202, 210, 226);
+	padding: 5px 5px;
 }
 
 .post__bottom{
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
-	margin: 4px 0px;
+	margin: 10px 0 0 0;
 }
+
+
 
 
 /* LAYOUT CLASSES ***********************************************************************************/
 
 .bluebg{
-	background-color: rgb(231, 235, 242);
+	background-color: rgb(238, 240, 244);
 	padding: 5px 7px 3px 7px;
 	margin: 1px -7px 1px -7px;
 }
 
 .no-margin{
 	margin: 0;
-	padding: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
