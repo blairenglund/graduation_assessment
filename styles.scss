@@ -1,3 +1,17 @@
+/* LAYOUT CLASSES ***********************************************************************************/
+
+@mixin bluebg() {
+	background-color: rgb(238, 240, 244);
+	padding: 5px 7px 3px 7px;
+	margin: 1px -7px 1px -7px;
+}
+
+@mixin no-margin() {
+	margin: 0;
+}
+
+
+
 /* TAG CLASSES ************************************************************************************/
 
 body{
@@ -66,10 +80,12 @@ a{
 
 .post__interact{
 	color: rgb(170, 170, 170);
+	@include bluebg();
 }
 
 .post__likes{
 	font-size: 8pt;	
+	@include bluebg();
 }
 
 .post__comments{
@@ -84,6 +100,7 @@ a{
 	flex-flow: row;
 	align-items: center;
 	margin: 0;
+	@include bluebg();
 }
 
 .comment{
@@ -91,6 +108,7 @@ a{
 	flex-flow: row;
 	align-items: flex-start;
 	margin: 0;
+	@include bluebg();
 }
 
 .comment__text{
@@ -104,19 +122,4 @@ a{
 	flex-flow: row;
 	justify-content: space-between;
 	margin: 10px 0 0 0;
-}
-
-
-
-
-/* LAYOUT CLASSES ***********************************************************************************/
-
-@mixin bluebg() {
-	background-color: rgb(238, 240, 244);
-	padding: 5px 7px 3px 7px;
-	margin: 1px -7px 1px -7px;
-}
-
-@mixin no-margin() {
-	margin: 0;
 }
