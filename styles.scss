@@ -1,0 +1,146 @@
+// MIXINS ///////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin bluebg() {
+	background-color: rgb(238, 240, 244);
+	padding: 5px 12px 3px 12px;
+	margin: 1px -12px 1px -12px;
+}
+
+@import 'font-awesome/css/font-awesome.css';
+
+
+
+
+/* TAG CLASSES ************************************************************************************/
+
+body{
+	background-color: rgb(231, 235, 242);
+}
+
+hr{
+	border: .5px solid rgb(230, 230, 230);
+}
+
+
+
+
+/* TYPOPGRAPHIC CLASSES ****************************************************************************/
+
+a{
+	text-decoration: none;
+	color: rgb(65, 90, 135);
+}
+
+.gray{
+	color: rgb(145, 145, 145);
+}
+
+.blue{
+	color: rgb(65, 90, 135);
+}
+
+.black{
+	color: black;
+}
+
+.bold{
+	font-weight: bolder;
+}
+
+
+
+
+/* POST CLASSES **********************************************************************************/
+
+.post{
+	width: 572px;
+	padding: 12px 18px;
+	background-color: white;
+	box-sizing: border-box;
+	border: 1px solid rgb(202, 210, 226);
+	border-radius: 4px;
+	font-family: Lucida Grande, Arial, sans-serif;
+	font-size: 8pt;
+	margin: auto;
+}
+
+.post__options{
+	padding: 1px 5px 2px 5px;
+	border: 1px solid rgb(230, 230, 230); 
+	align-self: flex-start;
+}
+
+.post__info{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin: 0;
+	font-size: 9pt;
+}
+
+.post__op{
+	flex-grow: 1;
+}
+
+.post__image{
+	margin-right: 10px;
+}
+
+.post__icon{
+	font-size: 7pt;
+}
+
+.post__content{
+	font-size: 9pt;
+	padding-bottom: 4px;
+}
+
+.post__interact{
+	color: rgb(170, 170, 170);
+	@include bluebg();
+}
+
+.post__likes{
+	font-size: 8pt;	
+	@include bluebg();
+}
+
+.post__comments{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment{
+	height: 34px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	margin: 0;
+	@include bluebg();
+}
+
+.comment__like{
+	line-height: 2em;
+}
+
+.comment__post{
+	display: flex;
+	flex-flow: row;
+	align-items: flex-start;
+	margin: 0;
+	@include bluebg();
+}
+
+.comment__textinput{
+	width: 100%;
+	border: 1px solid rgb(202, 210, 226);
+	padding: 5px 5px;
+}
+
+.post__bottom{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	margin: 8px 0 0 0;
+}
