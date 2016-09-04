@@ -1,9 +1,9 @@
 window.addEventListener('load', function() {
 	
 	//like buttons on comments
-	var likes = document.getElementsByClassName('comment-like');
+	var likes = document.getElementsByClassName('comment__like');
 	//like counts on comments
-	var counts = document.getElementsByClassName('comment-count');
+	var counts = document.getElementsByClassName('comment__count');
 
 	//add a like listener to each link
 	for (var i = 0; i < likes.length; i++) {

@@ -10,6 +10,9 @@
 	margin: 0;
 }
 
+@import 'font-awesome/css/font-awesome.css';
+
+
 
 
 /* TAG CLASSES ************************************************************************************/
@@ -33,7 +36,15 @@ a{
 }
 
 .gray{
-	color: rgb(170, 170, 170);
+	color: rgb(145, 145, 145);
+}
+
+.blue{
+	color: rgb(65, 90, 135);
+}
+
+.black{
+	color: black;
 }
 
 .bold{
@@ -104,7 +115,7 @@ a{
 	padding: 0;
 }
 
-.post__comment{
+.comment{
 	height: 34px;
 	display: flex;
 	flex-flow: row;
@@ -113,7 +124,11 @@ a{
 	@include bluebg();
 }
 
-.comment{
+.comment__like{
+	line-height: 2em;
+}
+
+.comment__post{
 	display: flex;
 	flex-flow: row;
 	align-items: flex-start;
@@ -121,7 +136,7 @@ a{
 	@include bluebg();
 }
 
-.comment__text{
+.comment__textinput{
 	width: 100%;
 	border: 1px solid rgb(202, 210, 226);
 	padding: 5px 5px;
@@ -131,5 +146,5 @@ a{
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
-	margin: 10px 0 0 0;
+	margin: 8px 0 0 0;
 }
